@@ -1,0 +1,92 @@
+{
+  "name": "path-to-regexp",
+  "description": "Express style path to RegExp utility",
+  "version": "2.1.0",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "standard",
+    "test-spec": "mocha --require ts-node/register -R spec --bail test.ts",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --require ts-node/register -R spec test.ts",
+    "test": "npm run lint && npm run test-cov"
+  },
+  "keywords": [
+    "express",
+    "regexp",
+    "route",
+    "routing"
+  ],
+  "component": {
+    "scripts": {
+      "path-to-regexp": "index.js"
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillarjs/path-to-regexp.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.0.24",
+    "chai": "^4.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0",
+    "standard": "^10.0.3",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "gitHead": "42a3869820a8a02f4545c6b9c460175a983eb6f0",
+  "bugs": {
+    "url": "https://github.com/pillarjs/path-to-regexp/issues"
+  },
+  "homepage": "https://github.com/pillarjs/path-to-regexp#readme",
+  "_id": "path-to-regexp@2.1.0",
+  "_npmVersion": "5.3.0",
+  "_nodeVersion": "8.4.0",
+  "_npmUser": {
+    "name": "blakeembrey",
+    "email": "hello@blakeembrey.com"
+  },
+  "dist": {
+    "integrity": "sha512-dZY7QPCPp5r9cnNuQ955mOv4ZFVDXY/yvqeV7Y1W2PJA3PEFcuow9xKFfJxbBj1pIjOAP+M2B4/7xubmykLrXw==",
+    "shasum": "7e30f9f5b134bd6a28ffc2e3ef1e47075ac5259b",
+    "tarball": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-2.1.0.tgz"
+  },
+  "maintainers": [
+    {
+      "email": "shtylman@gmail.com",
+      "name": "defunctzombie"
+    },
+    {
+      "email": "jonathanrichardong@gmail.com",
+      "name": "jongleberry"
+    },
+    {
+      "email": "hello@blakeembrey.com",
+      "name": "blakeembrey"
+    },
+    {
+      "email": "jonathanrichardong@gmail.com",
+      "name": "jonathanong"
+    },
+    {
+      "email": "doug@somethingdoug.com",
+      "name": "dougwilson"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/path-to-regexp-2.1.0.tgz_1508521635899_0.9024346047081053"
+  },
+  "directories": {},
+  "_shasum": "7e30f9f5b134bd6a28ffc2e3ef1e47075ac5259b",
+  "_resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-2.1.0.tgz",
+  "_from": "path-to-regexp@latest"
+}
