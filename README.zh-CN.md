@@ -40,6 +40,8 @@ ViewBoot( {
     el: '#app',
     // HTML 模板
     template: '<div> view-boot </div>',
+    // 是否自动插入 HTML 模板
+    autoInsertTemplate: true,
 } )
 ```
 
@@ -60,8 +62,8 @@ config( {
 view( {
     // 路由路径
     path: '/',
+    // 异步加载资源
     resources: [ '/test.css' ],
-    // 是否自动插入 HTML 模板
     autoInsertTemplate: true,
     template: require('./template/x.tpl')( ),
 } )
