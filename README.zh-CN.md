@@ -78,10 +78,10 @@ view( {
     // 异步加载 HTML 模板
     template: ( ) => import('./template/t1'),
     // 加载完成回调
-    loaded ( option ) {
-        console.log( option.route );
+    loaded ( options ) {
+        console.log( options.route );
         // 执行页面具体逻辑
-        option.entry( );
+        options.entry( );
     },
 } )
 
