@@ -24,18 +24,18 @@ const loadResources = function ( { resources }, callback ) {
         }
     });
 
-    resources.forEach(( item, index ) => {
+    resources.forEach( ( item, index ) => {
         util.loadResources({
             url: item,
             callback: ( ) => {
                 ++load.loaded;
             }
         });
-    });
+    } );
 }
 
 module.exports = function ( option ) {
-    return new Promise(( resolve, reject ) => {
+    return new Promise( ( resolve, reject ) => {
         loadResources( option, resolve );
-    });
+    } );
 };

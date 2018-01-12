@@ -9,17 +9,17 @@ let route = { };
 
 let configOption = { };
 
-const vb = ( option ) => {
+const ViewBoot = ( option ) => {
     route[ 'default' ] = option;
 
-    vb.boot( );
+    ViewBoot.boot( );
 };
 
-vb.config = function ( option ) {
+ViewBoot.config = function ( option ) {
     configOption = option;
 }
 
-vb.view = function ( option ) {
+ViewBoot.view = function ( option ) {
     const { path, alias } = option;
 
     const opt = Object.assign( JSON.parse( JSON.stringify( defaultOption ) ), configOption, option );
@@ -36,7 +36,7 @@ vb.view = function ( option ) {
     }
 };
 
-vb.boot = ( ) => {
+ViewBoot.boot = ( ) => {
     const pathname = location.pathname;
 
     let routeName = void 0;
@@ -67,4 +67,4 @@ vb.boot = ( ) => {
     boot( option );
 }
 
-module.exports = vb;
+module.exports = ViewBoot;

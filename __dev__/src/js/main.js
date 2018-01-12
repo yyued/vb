@@ -36,10 +36,11 @@ view({
     entry: ( ) => import('./t1'),
     autoInsertTemplate: true,
     template: ( ) => import('./template/t1'),
-    mounted ( option ) {
+    loaded ( option ) {
         console.log( option.route );
         console.log( option.entry );
-        option.entry();
+
+        option.entry( );
     },
 })
 

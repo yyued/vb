@@ -17,11 +17,11 @@ const loadTemplate = function ( option, callback ) {
         }
     }
 
-    setTimeout(( ) => {
+    setTimeout( ( ) => {
         callback();
-    }, 0);
+    }, 0 );
 }
 
-module.exports = ( option ) => ( ) => new Promise(( resolve, reject ) => {
+module.exports = ( option ) => ( ) => new Promise( ( resolve, reject ) => {
     loadTemplate( option, resolve );
-});
+} );

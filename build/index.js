@@ -16,7 +16,7 @@ view-boot
 @author: ${ packageJSON.author }
 @version: ${ packageJSON.version }
 @update: ${ ( new Date() ).format('YYYY-MM-DD hh:mm:ss') }
-@github: https://github.com/yyued/vb
+@github: https://github.com/yyued/view-boot
 
 (c) 2017 YY UEDC
 Released under the MIT License.
@@ -32,7 +32,7 @@ const configuration = {
         path: path.resolve( __dirname, '../dist' ),
         filename: distFileName,
         libraryTarget: 'umd',
-        library: 'vb',
+        library: 'ViewBoot',
     },
     module: {
         rules: [

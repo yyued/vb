@@ -13,22 +13,22 @@ const loadEntry = function ( option, callback ) {
 
     switch ( typeof entry ) {
         case 'string': {
-            util.loadScript({
+            util.loadScript( {
                 url: entry,
                 callback,
-            });
+            } );
             break;
         }
         case 'function': {
-            entry( ).then(( _entry ) => {
+            entry( ).then( ( _entry ) => {
                 option.entry = _entry;
-                callback();
-            })
+                callback( );
+            } )
             break;
         }
     }
 }
 
-module.exports = ( option ) => ( ) => new Promise(( resolve, reject ) => {
+module.exports = ( option ) => ( ) => new Promise( ( resolve, reject ) => {
     loadEntry( option, resolve );
-});
+} );

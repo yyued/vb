@@ -1,6 +1,6 @@
 {
   "name": "view-boot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "view",
   "main": "./dist/view-boot.min.js",
   "scripts": {

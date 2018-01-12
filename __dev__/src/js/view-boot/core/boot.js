@@ -8,7 +8,7 @@ module.exports = function ( option ) {
     loadResources( option )
         .then( loadTemplate( option ) )
         .then( loadEntry( option ) )
-        .then(( ) => {
-            option.mounted ? option.mounted( option ) : void 0;
-        })
+        .then( ( ) => {
+            option.loaded ? option.loaded( option ) : void 0;
+        } )
 };
