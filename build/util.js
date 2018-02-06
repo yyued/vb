@@ -15,7 +15,7 @@ Date.prototype.format = function ( fmt ) {
 
     for ( let k in date ) {
         if ( new RegExp('(' + k + ')').test( fmt ) ) {
-            fmt = fmt.replace( RegExp.$1, ( RegExp.$1.length == 1 ) ? ( date[ k ] ) : (( '00' + date[ k ] ).substr( ('' + date[ k ]).length) ) );
+            fmt = fmt.replace( RegExp.$1, ( RegExp.$1.length == 1 ) ? ( date[ k ] ) : ( ( '00' + date[ k ] ).substr( ( '' + date[ k ] ).length ) ) );
         }
     }
 

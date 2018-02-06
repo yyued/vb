@@ -3,7 +3,7 @@
 import defaultOption from './core/lib/default_option';
 import boot from './core/boot';
 
-const pathWrap = require('path-to-regexp-wrap')();
+const pathWrap = require('path-to-regexp-wrap')( );
 
 let route = { };
 
@@ -13,7 +13,7 @@ const ViewBoot = ( option ) => {
     route[ 'default' ] = option;
 
     ViewBoot.boot( );
-};
+}
 
 ViewBoot.config = function ( option ) {
     configOption = option;
@@ -34,7 +34,7 @@ ViewBoot.view = function ( option ) {
             a ? route[ a ] = opt : route[ 'default' ] = opt;
         });
     }
-};
+}
 
 ViewBoot.boot = ( ) => {
     const pathname = location.pathname;

@@ -79,9 +79,13 @@ view( {
     autoInsertTemplate: true,
     // 异步加载 HTML 模板
     template: ( ) => import('./template/t1'),
+    // 加载前回调 <同步函数，不会阻塞资源加载>
+    beforeLoad ( options ) {
+        console.log( '[beforeLoad]', options );
+    },
     // 加载完成回调
     loaded ( options ) {
-        console.log( options.route );
+        console.log( '[loaded]', options.route );
         // 执行页面具体逻辑
         options.entry( );
     },
@@ -90,3 +94,7 @@ view( {
 // 启动
 boot( );
 ```
+
+## 许可
+
+[MIT](./LICENSE)

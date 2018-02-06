@@ -18,7 +18,7 @@ view-boot
 @update: ${ ( new Date() ).format('YYYY-MM-DD hh:mm:ss') }
 @github: https://github.com/yyued/view-boot
 
-(c) 2017 YY UEDC
+(c) 2018 YY UEDC
 Released under the MIT License.
 `;
 

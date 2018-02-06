@@ -20,17 +20,17 @@ const loadResources = function ( { resources }, callback ) {
         set ( value ) {
             loaded = value;
 
-            loaded === resources.length ? callback() : void 0;
+            loaded === resources.length ? callback( ) : void 0;
         }
     });
 
     resources.forEach( ( item, index ) => {
-        util.loadResources({
+        util.loadResources( {
             url: item,
             callback: ( ) => {
                 ++load.loaded;
             }
-        });
+        } );
     } );
 }
 

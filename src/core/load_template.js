@@ -9,10 +9,10 @@ const loadTemplate = function ( option, callback ) {
             break;
         }
         case 'function': {
-            template( ).then(( _template ) => {
+            template( ).then( ( _template ) => {
                 option.template = _template;
                 autoInsertTemplate ? el.innerHTML = _template( ) : void 0;
-            });
+            } );
             break;
         }
     }
